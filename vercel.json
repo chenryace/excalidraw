@@ -21,12 +21,15 @@
           "value": "origin"
         }
       ]
-    }
-  ],
-  "redirects": [
+    },
     {
-      "source": "/webex/:match*",
-      "destination": "https://for-webex.excalidraw.com"
+      "source": "/(.*).(ttf|otf|woff2)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ]
 }
