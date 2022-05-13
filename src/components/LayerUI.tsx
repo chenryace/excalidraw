@@ -27,7 +27,7 @@ import { HelpDialog } from "./HelpDialog";
 import Stack from "./Stack";
 import { Tooltip } from "./Tooltip";
 import { UserList } from "./UserList";
-import Library from "../data/library";
+import Library, { distributeLibraryItemsOnSquareGrid } from "../data/library";
 import { JSONExportDialog } from "./JSONExportDialog";
 import { LibraryButton } from "./LibraryButton";
 import { isImageFileHandle } from "../data/blob";
@@ -277,7 +277,9 @@ const LayerUI = ({
     <LibraryMenu
       pendingElements={getSelectedElements(elements, appState, true)}
       onClose={closeLibrary}
-      onInsertShape={onInsertElements}
+      onInsertLibraryItems={(libraryItems) => {
+        onInsertElements(distributeLibraryItemsOnSquareGrid(libraryItems));
+      }}
       onAddToLibrary={deselectItems}
       setAppState={setAppState}
       libraryReturnUrl={libraryReturnUrl}
@@ -492,7 +494,7 @@ const LayerUI = ({
 
   const dialogs = (
     <>
-      {appState.isLoading && <LoadingMessage />}
+      {appState.isLoading && <LoadingMessage delay={250} />}
       {appState.errorMessage && (
         <ErrorDialog
           message={appState.errorMessage}

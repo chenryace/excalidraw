@@ -119,7 +119,8 @@
       "unlock": "Unlock",
       "lockAll": "Lock all",
       "unlockAll": "Unlock all"
-    }
+    },
+    "statusPublished": "Published"
   },
   "buttons": {
     "clearReset": "Reset the canvas",
@@ -172,7 +173,6 @@
     "uploadedSecurly": "The upload has been secured with end-to-end encryption, which means that Excalidraw server and third parties can't read the content.",
     "loadSceneOverridePrompt": "Loading external drawing will replace your existing content. Do you wish to continue?",
     "collabStopOverridePrompt": "Stopping the session will overwrite your previous, locally stored drawing. Are you sure?\n\n(If you want to keep your local drawing, simply close the browser tab instead.)",
-    "errorLoadingLibrary": "There was an error loading the third party library.",
     "errorAddingToLibrary": "Couldn't add item to the library",
     "errorRemovingFromLibrary": "Couldn't remove item from the library",
     "confirmAddLibrary": "This will add {{numShapes}} shape(s) to your library. Are you sure?",
@@ -189,7 +189,8 @@
     "fileTooBig": "File is too big. Maximum allowed size is {{maxSize}}.",
     "svgImageInsertError": "Couldn't insert SVG image. The SVG markup looks invalid.",
     "invalidSVGString": "Invalid SVG.",
-    "cannotResolveCollabServer": "Couldn't connect to the collab server. Please reload the page and try again."
+    "cannotResolveCollabServer": "Couldn't connect to the collab server. Please reload the page and try again.",
+    "importLibraryError": "Couldn't load library"
   },
   "toolBar": {
     "selection": "Selection",
@@ -341,7 +342,8 @@
       "post": "which in short means anyone can use them without restrictions."
     },
     "noteItems": "Each library item must have its own name so it's filterable. The following library items will be included:",
-    "atleastOneLibItem": "Please select at least one library item to get started"
+    "atleastOneLibItem": "Please select at least one library item to get started",
+    "republishWarning": "Note: some of the selected items are marked as already published/submitted. You should only resubmit items when updating an existing library or submission."
   },
   "publishSuccessDialog": {
     "title": "Library submitted",

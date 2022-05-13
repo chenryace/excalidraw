@@ -9,6 +9,7 @@
     "copy": "نسخ",
     "copyAsPng": "نسخ إلى الحافظة بصيغة PNG",
     "copyAsSvg": "نسخ إلى الحافظة بصيغة SVG",
+    "copyText": "نسخ إلى الحافظة كنص",
     "bringForward": "جلب للأمام",
     "sendToBack": "أرسل للخلف",
     "bringToFront": "أحضر للأمام",
@@ -21,7 +22,7 @@
     "fill": "التعبئة",
     "strokeWidth": "سُمك الخط",
     "strokeStyle": "نمط الخط",
-    "strokeStyle_solid": "كامل",
+    "strokeStyle_solid": "متصل",
     "strokeStyle_dashed": "متقطع",
     "strokeStyle_dotted": "منقط",
     "sloppiness": "الإمالة",
@@ -107,11 +108,19 @@
     "decreaseFontSize": "تصغير حجم الخط",
     "increaseFontSize": "تكبير حجم الخط",
     "unbindText": "",
+    "bindText": "",
     "link": {
       "edit": "تعديل الرابط",
       "create": "إنشاء رابط",
       "label": "رابط"
-    }
+    },
+    "elementLock": {
+      "lock": "",
+      "unlock": "",
+      "lockAll": "",
+      "unlockAll": ""
+    },
+    "statusPublished": ""
   },
   "buttons": {
     "clearReset": "إعادة تعيين اللوحة",
@@ -159,12 +168,11 @@
     "couldNotLoadInvalidFile": "تعذر التحميل، الملف غير صالح",
     "importBackendFailed": "فشل الاستيراد من الخادوم.",
     "cannotExportEmptyCanvas": "لا يمكن تصدير لوحة فارغة.",
-    "couldNotCopyToClipboard": "تعذر النسخ إلى الحافظة. حاول استخدام متصفح Chrome.",
+    "couldNotCopyToClipboard": "",
     "decryptFailed": "تعذر فك تشفير البيانات.",
     "uploadedSecurly": "تم تأمين التحميل بتشفير النهاية إلى النهاية، مما يعني أن خادوم Excalidraw والأطراف الثالثة لا يمكنها قراءة المحتوى.",
     "loadSceneOverridePrompt": "تحميل الرسم الخارجي سيحل محل المحتوى الموجود لديك. هل ترغب في المتابعة؟",
     "collabStopOverridePrompt": "إيقاف الجلسة سيؤدي إلى الكتابة فوق رسومك السابقة المخزنة داخليا. هل أنت متأكد؟\n\n(إذا كنت ترغب في الاحتفاظ برسمك المخزن داخليا، ببساطة أغلق علامة تبويب المتصفح بدلاً من ذلك.)",
-    "errorLoadingLibrary": "حصل خطأ أثناء تحميل مكتبة الطرف الثالث.",
     "errorAddingToLibrary": "تعذر إضافة العنصر للمكتبة",
     "errorRemovingFromLibrary": "تعذر إزالة العنصر من المكتبة",
     "confirmAddLibrary": "هذا سيضيف {{numShapes}} شكل إلى مكتبتك. هل أنت متأكد؟",
@@ -172,7 +180,7 @@
     "cannotRestoreFromImage": "تعذر استعادة المشهد من ملف الصورة",
     "invalidSceneUrl": "تعذر استيراد المشهد من عنوان URL المتوفر. إما أنها مشوهة، أو لا تحتوي على بيانات Excalidraw JSON صالحة.",
     "resetLibrary": "هذا سوف يمسح مكتبتك. هل أنت متأكد؟",
-    "removeItemsFromsLibrary": "",
+    "removeItemsFromsLibrary": "حذف {{count}} عنصر (عناصر) من المكتبة؟",
     "invalidEncryptionKey": "مفتاح التشفير يجب أن يكون من 22 حرفاً. التعاون المباشر معطل."
   },
   "errors": {
@@ -181,7 +189,8 @@
     "fileTooBig": "الملف كبير جداً. الحد الأقصى المسموح به للحجم هو {{maxSize}}.",
     "svgImageInsertError": "تعذر إدراج صورة SVG. يبدو أن ترميز SVG غير صحيح.",
     "invalidSVGString": "SVG غير صالح.",
-    "cannotResolveCollabServer": ""
+    "cannotResolveCollabServer": "",
+    "importLibraryError": ""
   },
   "toolBar": {
     "selection": "تحديد",
@@ -196,7 +205,8 @@
     "library": "مكتبة",
     "lock": "الحفاظ على أداة التحديد نشطة بعد الرسم",
     "penMode": "",
-    "link": ""
+    "link": "",
+    "eraser": "ممحاة"
   },
   "headings": {
     "canvasActions": "إجراءات اللوحة",
@@ -221,7 +231,8 @@
     "placeImage": "",
     "publishLibrary": "نشر مكتبتك",
     "bindTextToElement": "",
-    "deepBoxSelect": ""
+    "deepBoxSelect": "",
+    "eraserRevert": ""
   },
   "canvasError": {
     "cannotShowPreview": "تعذر عرض المعاينة",
@@ -281,14 +292,15 @@
     "howto": "اتبع التعليمات",
     "or": "أو",
     "preventBinding": "منع ارتبط السهم",
-    "shapes": "أشكال",
+    "tools": "الأدوات",
     "shortcuts": "اختصارات لوحة المفاتيح",
     "textFinish": "إنهاء التعديل (محرر النص)",
     "textNewLine": "أضف سطر جديد (محرر نص)",
     "title": "المساعدة",
     "view": "عرض",
     "zoomToFit": "تكبير للملائمة",
-    "zoomToSelection": "تكبير للعنصر المحدد"
+    "zoomToSelection": "تكبير للعنصر المحدد",
+    "toggleElementLock": ""
   },
   "clearCanvasDialog": {
     "title": "مسح اللوحة"
@@ -330,7 +342,8 @@
       "post": "وهو ما يعني باختصار أنه يمكن لأي شخص استخدامها دون قيود."
     },
     "noteItems": "يجب أن يكون لكل عنصر مكتبة اسمه الخاص حتى يكون قابلاً للتصفية. سيتم تضمين عناصر المكتبة التالية:",
-    "atleastOneLibItem": "يرجى تحديد عنصر مكتبة واحد على الأقل للبدء"
+    "atleastOneLibItem": "يرجى تحديد عنصر مكتبة واحد على الأقل للبدء",
+    "republishWarning": ""
   },
   "publishSuccessDialog": {
     "title": "تم إرسال المكتبة",

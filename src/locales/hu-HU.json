@@ -9,6 +9,7 @@
     "copy": "Másolás",
     "copyAsPng": "Vágólapra másolás mint PNG",
     "copyAsSvg": "Vágólapra másolás mint SVG",
+    "copyText": "",
     "bringForward": "Előrébb hozás",
     "sendToBack": "Hátraküldés",
     "bringToFront": "Előrehozás",
@@ -107,11 +108,19 @@
     "decreaseFontSize": "Betűméret csökkentése",
     "increaseFontSize": "Betűméret növelése",
     "unbindText": "Szövegkötés feloldása",
+    "bindText": "",
     "link": {
       "edit": "Hivatkozás szerkesztése",
       "create": "Hivatkozás létrehozása",
       "label": "Hivatkozás"
-    }
+    },
+    "elementLock": {
+      "lock": "",
+      "unlock": "",
+      "lockAll": "",
+      "unlockAll": ""
+    },
+    "statusPublished": ""
   },
   "buttons": {
     "clearReset": "Vászon törlése",
@@ -159,12 +168,11 @@
     "couldNotLoadInvalidFile": "Nem sikerült betölteni a helytelen fájlt",
     "importBackendFailed": "Nem sikerült betölteni a szerverről.",
     "cannotExportEmptyCanvas": "Üres vászont nem lehet exportálni.",
-    "couldNotCopyToClipboard": "Nem sikerült vágólapra menteni. Próbáld meg Chrome böngészővel.",
+    "couldNotCopyToClipboard": "",
     "decryptFailed": "Nem sikerült visszafejteni a titkosított adatot.",
     "uploadedSecurly": "A feltöltést végpontok közötti titkosítással biztosítottuk, ami azt jelenti, hogy egy harmadik fél nem tudja megnézni a tartalmát, beleértve az Excalidraw szervereit is.",
     "loadSceneOverridePrompt": "A betöltött külső rajz felül fogja írnia meglévőt. Szeretnéd folytatni?",
     "collabStopOverridePrompt": "A munkamenet leállítása felül fogja írni az előzőleg helyben tárolt rajzot. Biztosan ezt akarod?\n(Ha meg akarod tartani a helyben tárolt rajzot, egyszerűen csak zárd be a böngésző fület)",
-    "errorLoadingLibrary": "Hibába ütközött a harmarmadik féltől származó könyvtár betöltése.",
     "errorAddingToLibrary": "A tétel nem addható hozzá a könyvtárhoz",
     "errorRemovingFromLibrary": "A tétel nem távolítható el a könyvtárból",
     "confirmAddLibrary": "Ez a művelet {{numShapes}} formát fog hozzáadni a könyvtáradhoz. Biztos vagy benne?",
@@ -181,7 +189,8 @@
     "fileTooBig": "A fájl túl nagy. A megengedett maximális méret {{maxSize}}.",
     "svgImageInsertError": "Nem sikerült beszúrni az SVG-képet. Az SVG szintaktika érvénytelennek tűnik.",
     "invalidSVGString": "Érvénytelen SVG.",
-    "cannotResolveCollabServer": ""
+    "cannotResolveCollabServer": "",
+    "importLibraryError": ""
   },
   "toolBar": {
     "selection": "Kijelölés",
@@ -196,7 +205,8 @@
     "library": "Könyvtár",
     "lock": "Rajzolás után az aktív eszközt tartsa kijelölve",
     "penMode": "Akadályozza meg a kicsinyítést, és csak tollról fogadja el a szabadkézi bevitelt",
-    "link": "Hivatkozás hozzáadása/frissítése a kiválasztott alakzathoz"
+    "link": "Hivatkozás hozzáadása/frissítése a kiválasztott alakzathoz",
+    "eraser": ""
   },
   "headings": {
     "canvasActions": "Vászon műveletek",
@@ -221,7 +231,8 @@
     "placeImage": "Kattints a kép elhelyezéséhez, vagy kattints és méretezd manuálisan",
     "publishLibrary": "Tedd közzé saját könyvtáradat",
     "bindTextToElement": "Nyomd meg az Entert szöveg hozzáadáshoz",
-    "deepBoxSelect": "Tartsd lenyomva a Ctrl/Cmd billentyűt a mély kijelöléshez és a húzás megakadályozásához"
+    "deepBoxSelect": "Tartsd lenyomva a Ctrl/Cmd billentyűt a mély kijelöléshez és a húzás megakadályozásához",
+    "eraserRevert": ""
   },
   "canvasError": {
     "cannotShowPreview": "Előnézet nem jeleníthető meg",
@@ -281,14 +292,15 @@
     "howto": "Kövesd az útmutatóinkat",
     "or": "vagy",
     "preventBinding": "A nyíl ne ragadjon",
-    "shapes": "Alakzatok",
+    "tools": "",
     "shortcuts": "Gyorsbillentyűk",
     "textFinish": "Szerkesztés befejezése (szöveg)",
     "textNewLine": "Új sor hozzáadása (szöveg)",
     "title": "Segítség",
     "view": "Nézet",
     "zoomToFit": "Az összes elem látótérbe hozása",
-    "zoomToSelection": "Kijelölésre nagyítás"
+    "zoomToSelection": "Kijelölésre nagyítás",
+    "toggleElementLock": ""
   },
   "clearCanvasDialog": {
     "title": "Rajzvászon alaphelyzetbe"
@@ -330,7 +342,8 @@
       "post": "ami röviden azt jelenti, hogy bárki korlátozás nélkül használhatja őket."
     },
     "noteItems": "Minden könyvtárelemnek saját nevével kell rendelkeznie, hogy szűrhető legyen. A következő könyvtári tételek kerülnek bele:",
-    "atleastOneLibItem": "A kezdéshez válassz ki legalább egy könyvtári elemet"
+    "atleastOneLibItem": "A kezdéshez válassz ki legalább egy könyvtári elemet",
+    "republishWarning": ""
   },
   "publishSuccessDialog": {
     "title": "A könyvtár beküldve",
