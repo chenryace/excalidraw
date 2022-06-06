@@ -540,7 +540,7 @@ const ExcalidrawWrapper = () => {
             textAlign: "center",
           }}
         >
-          {isExcalidrawPlusSignedUser ? PlusAppLinkJSX : PlusLPLinkJSX}
+          {isExcalidrawPlusSignedUser ? PlusAppLinkJSX : PlusAppLinkJSX}
         </div>
       );
     },
@@ -599,7 +599,7 @@ const ExcalidrawWrapper = () => {
                 borderRadius: 12,
               }}
             >
-              {isExcalidrawPlusSignedUser ? PlusAppLinkJSX : PlusLPLinkJSX}
+              {isExcalidrawPlusSignedUser ? PlusAppLinkJSX : PlusAppLinkJSX}
             </div>
           </div>
         );
