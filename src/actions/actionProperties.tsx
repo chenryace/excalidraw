@@ -672,8 +672,8 @@ export const actionChangeFontFamily = register({
         icon: <FontFamilyCodeIcon theme={appState.theme} />,
       },
       {
-        value: FONT_FAMILY.XiaolaiMonoSC,
-        text: "小赖字体 Mono",
+        value: FONT_FAMILY.JiangCheng,
+        text: "江城律动黑体",
         icon: <FontFamilyLaiIcon theme={appState.theme} />,
       },
       {

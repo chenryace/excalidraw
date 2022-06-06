@@ -70,7 +70,7 @@ export const FONT_FAMILY = {
   Virgil: 1,
   Helvetica: 2,
   Cascadia: 3,
-  XiaolaiMonoSC: 4,
+  JiangCheng: 4,
   XiaolaiSC: 5,
 };
 
@@ -82,7 +82,7 @@ export const THEME = {
 export const WINDOWS_EMOJI_FALLBACK_FONT = "Segoe UI Emoji";
 
 export const DEFAULT_FONT_SIZE = 28;
-export const DEFAULT_FONT_FAMILY: FontFamilyValues = FONT_FAMILY.Virgil;
+export const DEFAULT_FONT_FAMILY: FontFamilyValues = FONT_FAMILY.JiangCheng;
 export const DEFAULT_TEXT_ALIGN = "left";
 export const DEFAULT_VERTICAL_ALIGN = "top";
 export const DEFAULT_VERSION = "{version}";
